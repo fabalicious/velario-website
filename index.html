@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velario</title>
     <link rel="icon" type="image/x-icon" href="/favicon-velario.png">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    <style>
         * {
             margin: 0;
             padding: 0;
@@ -33,7 +33,7 @@
             max-width: 300px;
             width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             animation: revealLogo 2s ease-in-out forwards;
             transform-origin: center;
         }
@@ -66,7 +66,9 @@
         .typing-demo {
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     font-size: 1rem;
+    letter-spacing: 3px;
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     animation-delay: 3s;  /* Starts after logo animation */
@@ -74,7 +76,7 @@
 
 @keyframes fadeIn {
     0% { opacity: 0; }
-    100% { opacity: 1; }
+    100% { opacity: 0.8; }
 }
 
         @keyframes blink {
@@ -150,7 +152,7 @@
         <!-- Replace the src with your actual logo file path -->
         <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
         <div class="typing-demo">
-            LAUNCHING SOON
+            LAUNCHING   SOON
         </div>
         <div class="stars">
             <div class="star star-small" style="left: 5%; top: 69%; animation-delay: 0.5s"></div>
