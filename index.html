@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velario</title>
+    <link rel="icon" type="image/x-icon" href="/favicon-velario.png">
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #5F61F5;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+    color: white;
+  width: 16ch;
+/*  animation: typing 2s steps(16), blink .5s step-end infinite alternate; */
+  animation: typingEffect 8s steps(1) infinite; /* 8s total cycle */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 0 auto; /* This centers the element */
+  text-align: left; /* This ensures text starts from left while container remains centered */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes typingEffect {
+    0% { width: 0; opacity: 1; }
+    25% { width: 16ch; opacity: 1; }  /* typing happens here */
+    50% { width: 16ch; opacity: 1; }  /* stay visible */
+    55% { width: 16ch; opacity: 0; }  /* disappear */
+    95% { width: .typing-demo {
+        color: white;
+        width: 16ch;
+        animation: typingEffect 8s steps(16) infinite,
+                   blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+        font-family: monospace;
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    @keyframes typingEffect {
+        0% { width: 0; opacity: 1; }
+        30% { width: 16ch; opacity: 1; }  /* typing happens during this period */
+        70% { width: 16ch; opacity: 1; }  /* stay visible */
+        75% { width: 16ch; opacity: 0; }  /* disappear */
+        95% { width: 0; opacity: 0; }     /* reset width while invisible */
+        100% { width: 0; opacity: 1; }    /* start next cycle */
+    }
+}
+
+body {
+  text-align: center;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Replace the src with your actual logo file path -->
+        <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
+        <div class="typing-demo">
+            Launching soon.
+          </div>
+          <!-- <h1 class="coming-soon">Coming soon</h1> -->
+    </div>
+</body>
+</html>
